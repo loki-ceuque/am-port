@@ -1,0 +1,593 @@
+/* DEFINIÇÕES DE FONTES*/
+
+@font-face {
+	font-family: 'Ideal Sans - Medium';
+	src: url('IDEALSANS-MEDIUM.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Ideal Sans - Extralight';
+	src: url('IDEALSANS-EXTRALIGHT.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay SC';
+	src: url('PlayfairDisplaySC-Regular.ttf') format('truetype');
+
+}
+
+@font-face{
+	font-family: 'Ideal Sans - Book';
+	src: url('IDEALSANS-BOOK.otf') format('truetype');
+}
+
+
+/*DEFINIÇÕES GERAIS / GLOBAIS DO CORPO DA PÁGINA*/
+
+body {
+	font-family: "Ideal Sans - Extralight";
+	width: auto;
+	margin-left: 12%;
+	margin-right: 12%;
+	padding: 0px;
+	background-color: #fafafa;
+	
+}
+
+p {
+	font-family: "Ideal Sans - Extralight"
+}
+
+/* DEFINIÇÕES DE ESTILO DO MENU SUPERIOR */
+
+.menuprincipal {
+	width: 100%;
+/*	margin-right: 12%;
+	margin-left: 12%;*/
+	position: fixed;
+	top: 0px;
+	height: 60px;
+}
+
+.hover-menu {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+}
+.hover-menu:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	right: 100%;
+	bottom: 0;
+	background: #ad001a;
+	height: 4px;
+	-webkit-transition-property: right;
+	transition-property: right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hover-menu:hover:before, .hover-menu:focus:before, .hover-menu:active:before {
+	left: 0;
+	right: 0;
+}
+
+nav ul {
+	list-style: none;
+	background-color: #fafafa;
+	text-align: center;
+	margin:0 auto;
+	padding: 0;
+	height: 50px;
+}
+
+nav li {
+	font-family: 'Ideal Sans - Extralight', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	line-height: 48px;
+	height: 48px;
+	width: 14%;
+}
+
+nav a {
+	height: 30px;
+	text-decoration: none;
+	color:#080B10;
+	display: block;
+	transition: 1s background-color;
+
+}
+
+nav a:focus {
+	background-color:#FAFAFA;
+	color: #fafafa;
+	cursor: default;
+}	
+
+
+/*DEFINIÇÕES GERAIS DOS TÍTULOS / H1...H2*/
+
+h1 {
+	font-family: "Ideal Sans - Medium";
+	font-weight: normal;
+	color: #B8B8B8;
+}
+
+h2 {
+	font-family: "PlayfairDisplay SC";
+	font-weight: normal;
+	color: #ad001a;
+}
+
+.h1 {
+	font-family: "Ideal Sans - Medium";
+	font-weight: medium;
+	color: #080B10;
+	text-align: center;
+	font-size: 70px;
+}
+
+.h2_sobre {
+	font-family: "PlayfairDisplay SC";
+	font-weight: normal;
+	font-size: 50px;
+	color: #ad001a;
+	padding-top: 60px;
+
+}
+
+.h2_geral {
+	font-family: "PlayfairDisplay SC"
+	font-weight: normal;
+	font-size: 50px;
+	color: #ad001a;
+	text-align: center;
+}
+
+/* DEFINIÇÕES GERAIS DE DIVS PARA ESPAÇAMENTOS E DIVS GERAIS*/
+
+.div_respiro_menu_conteudo {
+	width: 100%;
+	height: 10px;
+
+}
+
+.div_espaço_sections {
+	width: 100%;
+	height: 20px;
+
+}
+
+.div_espaço_sections {
+	width: 100%;
+	height: 25px;
+}
+
+.div_nano_respiro {
+	width: 100%;
+	height: 120px;
+}
+
+.div_nano_respiro2 {
+	width: 100%;
+	height: 160px;
+}
+
+.div_caixa_portifolio_home {
+
+}
+
+/* ESTILOS DE SECTIONS */
+
+/* ----------------------------- SECTION HOME ------------------------------- */
+
+#home{
+/*	border: 2px solid black;
+	margin-left: 12%;	
+	margin-right: 12%;*/
+	height: 500px; 
+	padding-top: 50px;
+	z-index: 1;
+
+}
+
+
+#home img{ 
+	position: relative; /*A posição é relativa de acordo com o tamanho da tela*/	
+	height: auto; /*Define que a altura da imagem é de acordo com a altura da section*/
+	width: 460px;
+	/*margin-right: 12%;*/
+	border-radius: 100%;
+	z-index: 0; /*Define que a imagem fica por trás*/
+	float: right; /*Define que a imagem fica alinhada a direita*/
+	/*margin-right: 12%*/; /* Dá uma margem de 12% a direita*/
+}
+
+#pokka_pokka {
+	position: right;
+	height: 320px;
+	width: 650px;
+	margin-top: 8%;
+	margin-left: 5%;
+	border-bottom: 3px solid #463073;
+	border-top: 3px solid #463073;
+	border-left: 3px solid #463073;
+	border-right: 3px solid #463073;
+	z-index: -1;
+}
+
+#home h1{
+	/*Position absolute define que o elemento fica naquela posição independente de qualquer coisa*/
+	position: absolute; 
+	z-index: 1;
+   top: 180px; 
+   /*left: 12%;*/
+   /* Espaçamento da caixinha de texto*/
+   margin-left: 2%;
+   padding-left: 2%;
+   padding-right: 3%; 
+   padding-top: 1%;
+   padding-bottom: 1%;
+   color: #fafafa; /*Cor da letra*/
+   background-color: #ad001a; /* Cor da caixa de texto*/
+   font-family: "Ideal Sans - Book";
+   font-weight: medium;
+   text-align: center;
+   font-size: 60px;
+
+}
+
+#home h3 {
+	/*Position absolute define que o elemento fica naquela posição independente de qualquer coisa*/
+	position: absolute; 
+   top: 250px; 
+   left: 30%;
+   /* Espaçamento da caixa*/
+   padding-left: 3%;
+   padding-right: 3%; 
+   padding-top: 1%;
+   padding-bottom: 1%;
+   color: #fafafa; /*Cor da letra*/
+   background-color: #ad001a; /* Cor da caixa de texto*/
+   font-family: "Ideal Sans - Book";
+   font-weight: medium;
+   text-align: center;
+   font-size: 60px;
+   z-index: 1;
+}
+
+/* -------------------------- SECTION SOBRE ----------------------------- */
+
+#sobre {
+	/*border: 1px solid black;*/
+	height: 280px;
+	/*margin-left: 12%;
+	margin-right: 12%;*/
+}
+
+#sobre h2 {
+	font-family: "PlayfairDisplay SC";
+	font-weight: normal;
+	font-size: 50px;
+	color: #ad001a;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	/*padding-top: 60px;*/
+
+}
+
+#sobre p {
+	/*position: absolute;
+	right: 12%;
+	left: 28%;*/
+	text-align: justify;
+	font-size: 18px;
+
+}
+
+#sobre_texto {
+	position: absolute;
+	right: 12%;
+	left: 28%;
+
+
+}
+
+
+/* ------------------------ SECTION DE SERVIÇOS ------------------------ */
+
+#servicos {
+	height: 450px;
+	width: 100%;
+	/*border: 2px solid black;*/
+	/*margin-left: 12%;
+	margin-right: 12%;*/
+}
+
+#servicos h2 {
+	font-family: "PlayfairDisplay SC"
+	font-weight: normal;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	font-size: 50px;
+	color: #ad001a;
+	text-align: center;
+
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 32% 32% 32%;
+  grid-column-gap: 2%;
+  grid-row-gap: 30px;
+  background-color: #fafafa;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*padding-right: 12%;*/
+  /*padding-left: 12%;*/
+}
+.grid-item {
+  background-color: #fafafa;
+  height: 100px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-item-2 {
+  background-color: #fafafa;
+  height: 20px;
+  padding-top: 5px;
+  border: none;
+  font-family: 'Ideal Sans - Book';
+  font-size: 20px;
+  color: #A0001A;
+  text-align: center;
+}
+
+.grid-item-3 {
+  background-color: #fafafa;
+  height: 100px;
+  padding-top: 20px;
+  border: none;
+  font-family: 'Ideal Sans - Extralight';
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* ------------------------ SECTION DE PORTFOLIO --------------------------*/
+
+
+#portfolio {
+	height: 700px;
+	width: 100%;
+	/*border: 2px solid red;*/
+	/*margin-right: 12%;
+	margin-left: 12%;*/
+}
+
+#portfolio img {
+	opacity: 0.9;
+    /*filter: alpha(opacity=80);*/
+    transition: 0.5s;
+}
+
+#portfolio img:hover {
+	opacity: 1.0;
+    /*filter: alpha(opacity=100)*/
+
+}
+
+#portfolio h2 {
+	margin-bottom: 1%;
+	margin-top: 1%;
+	font-size: 50px;
+	position: absolute;
+	right: 12%;
+
+}
+
+.galeria-portfolio {
+	width: 100%;
+	/*padding-left: 12%;*/
+	/*padding-right: 12%;*/
+	padding-top: 160px;
+}
+
+.galeria-portfolio img {
+	width: 33%;
+	/*padding-right: 1%;*/
+/*	padding-left: 1%;*/
+	/*margin-right: 1%;
+	margin-left: 1%;*/
+
+}
+
+/*-------------------------- SECTION CONTATO ------------------------------*/
+
+#contato {
+	height: 600px;
+	width: 100%;
+	/*border: 3px solid green;*/
+
+}
+
+#contato h2 {
+	margin-bottom: 1%;
+	margin-top: -1%;
+	padding-bottom: 4	%;
+	text-align: center;
+	font-family: "PlayfairDisplay SC";
+	font-weight: normal;
+	font-size: 50px;
+	margin-left: 12%;
+	margin-right: 12%;
+	color: #ad001a;
+
+
+}
+
+
+#form {
+	font-family: 'Ideal Sans - Extralight';
+	text-decoration: none;
+	text-align: center;
+	padding:auto;
+}
+
+#formbuttons {
+	text-align: right;
+	padding-right: 20%;
+
+}
+
+.caixa_texto {
+	font-family: 'Ideal Sans - Extralight';
+	font-size: 18px;
+	background-color: #fafafa;
+	color: #A0001A;
+	border: 2px solid #463073;
+	width: 59%;
+	margin: 5px;
+}
+
+.tamanho-caixa{
+	height: 30px;
+}
+
+.caixa_texto::placeholder {
+    color: #080B10;
+    opacity: 1; 
+    font-size: 18px;	
+}
+
+.botao_envio {
+	font-family: 'Ideal Sans - Extralight';
+	background-color: #463073;
+	color: #fff;
+	border: none;
+	height: 30px;
+	padding: 5px 30px;
+}
+
+.botao_envio:hover {
+	font-family: 'Ideal Sans - Extralight';
+	background-color: #A0001A;
+	color: #fff;
+	border: none;
+	height: 30px;
+	padding: 5px 30px;
+}
+
+.botao_limpar {
+	font-family: 'Ideal Sans - Extralight';
+	background-color: #463073;
+	color: #fff;
+	border: none;
+	height: 30px;
+	padding: 5px 30px;
+}
+
+.botao_limpar:hover {
+	font-family: 'Ideal Sans - Extralight';
+	background-color: #A0001A;
+	color: #fff;
+	border: none;
+	height: 30px;
+	padding: 5px 30px;
+}
+
+/*-------------------------- SECTION RODAPÉ ------------------------------*/
+
+#rodape {
+	height: 50px;
+}
+
+#rodape p {
+	text-align: center;
+	font-family: "Ideal Sans - Extralight"
+	font-size: 12px;
+	padding: 20px;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #080B10;
+	padding-bottom: 10px;
+	color: #fafafa;
+  
+}
+
+/*------------------------- SECTION REDES SOCIAIS ------------------------*/
+
+
+
+
+
+/*------------------------- Z- INDEX DO MENU DE NAV ----------------------*/
+
+
+#qualquercoisa {
+	position: fixed;
+
+	z-index: 20000000;
+} 
+
+#padding_zero {
+	margin: 0; 
+	padding: 0;
+}
+
+/*-------------------------- CSS DO SLIDE -----------------------*/
+
+#panel, #flip {
+	font-family: "Ideal Sans - Extralight"
+	/*font-size: 18px;*/
+/*	margin-left: 24%;
+	margin-right: 24%;*/
+	height: 40px;
+    padding: 10px;
+    background-color: #fafafa;
+/*    color: #463073;*/
+    
+}
+
+#panel {
+	margin-left: 16%;
+    padding: 50px;
+    display: none;
+    font-size: 18px;
+   /* text-align: justify;*/
+}
+
+#panel p {
+	 font-size: 18px;
+	 text-align: justify;
+}
+
+#flip {
+	text-align: center; 
+ 	font-size: 18px;
+/* 	margin-right: 12%;*/
+ 	margin-left: 76%;
+ 	border-top: solid 2px #463073;
+    border-right: solid 2px #463073;
+    border-left: solid 2px #463073;
+ 	border-bottom: solid 2px #463074;
+}
+
+#flip:hover {
+	background-color: #463073;
+	color: #fafafa;
+}
